@@ -14,7 +14,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style type="text/css">
-   
+   @media (max-width: 600px){
+    div{
+      width: 100%;
+    }
+   }
        
     body{
 
@@ -28,15 +32,6 @@
 
     }
 
-          div{
-            opacity:55%;
-            color: black;
-          }
-
-          div:hover{
-            opacity:95%;
-            color: black;
-          }
 
          .navbar-brand{
 
@@ -52,14 +47,14 @@
           }
           h1{
              font-family: 'DM Sans', sans-serif;
-             color: black;
+      
              
           }
           
           h4{
             font-size: 15px;
             text-transform: uppercase;
-            color: black;
+            
           }
           h6{
             font-size: 100px;
@@ -75,11 +70,15 @@
           #boardSetting:hover{
               background-color: #F8F9FA;
               border-radius: 25px;
+              opacity:95%;
+              color: black;
           }
           #boardSetting{
-              background-color: black;
+              background-color: none;
               color: white;
               border-radius: 25px;
+              opacity:95%;
+              color: white;
           }
           
           .nav-link{
@@ -108,8 +107,11 @@
             transform: scale(1.08);
           }
 
+          #edu1:hover{ text-decoration: none;
+            color: black}
+
           #edu1{ text-decoration: none;
-            color: black;}
+            color: white}
 
           #mainNav{
             background-color: lightgrey;
@@ -194,8 +196,8 @@
           </div>
           </div></nav>
 <br><br>
- <div class="container">
-   <div class="container border p-4" id="boardSetting">
+ <div class="container" id="boardSetting">
+   <div class="container p-4">
       <div class="row">
         
         <div class="col-6 mt-5">
@@ -214,7 +216,7 @@
 
         </div>
       </div>
-      <div class="container">
+    
         <p>Hi 👋😀  This is my first portfolio website which I built by applying what I learnt under <a style="text-decoration: none;" href="https://github.com/wanmuz86">En.Muzaffar</a> my coding teacher for Industrial 4.0 Academy on Bootstrap, HTML, & CSS programmimg. I am writing a summary about myself here. I worked in Retail Banking professional for past 9 years in 3 major banks in Malaysia. However,due to Covid-19 pandemic crisis, I have been made redundant along with hundred of my other colleagues apart of right-sizing exercise by my previous company.</p>
         <p>Nevertheless,life must goes on and I am positive that everything happens for a reason. From that point,I decided to take a leap of faith to trying to learn something that unrelated to my career but within my heart, I was wanting to do this very long which is web developement course. Thanks to <a style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Employees%27_Social_Security_Act_1969"><em>PERKESO</em></a>, who offered thousands of reskilling & upskilling programmes for those who had to go through similar situation as me, and I chose to specialize in web development. By this course,I get to know how the websites are built,the basic of coding using <b>HTML,CSS and Javascript</b>.I got to say that the joy of creating or building something such as website or software is priceless. Although it's pretty tough to understand it at first but I am starting getting enjoy it more everyday and still learning day by day.</p>
         <p>The drastic transformation of from being a banker who have years of working experience and suddenly learning the new skills that I have been working on at the moment has opened my eyes that it is never too late to learn something.As some saying,<strong>the life is never ending learning process</strong>.I believe the quality and working ethics that I develop throughout my previous career would be useful in any industry that I am into as far as a full commitment is given. Thank you and have a good day 😀</p>
@@ -325,7 +327,7 @@
     <hr class="my-5">
     <div class="row my-3">
       <div class="col-8">
-        <h2><a id="edu1" href="https://en.wikipedia.org/wiki/Master_of_Business_Administration">Masters of Business Administration <kbd>MBA</a></kbd></h2>
+        <h2>Masters of Business Administration <a id="edu1" href="https://en.wikipedia.org/wiki/Master_of_Business_Administration"><kbd>MBA</a></kbd></h2>
         <h3>2020 - 2021</h3>
         <h5>Studied in<a id="edu1" href="https://www.lincoln.edu.my/post_graduate/Master_of_Business_Administration"><mark>Lincoln University College</mark></a> and focuses on modules as below;</h5>
         <ul>
@@ -355,8 +357,9 @@
         <h2>freeCodeCamp</h2>
         <h3>2020 - 2021</h3>
         <ul>
-          <li>Completed <a href="https://www.freecodecamp.org/certification/rubanero/responsive-web-design" style="text-decoration: none;">Responsive Web Design Certification</a> (300hrs)</li>
-          <li>Completed <a href="https://www.freecodecamp.org/certification/rubanero/javascript-algorithms-and-data-structures" style="text-decoration: none;">Javascript Algorithms and Data Structures Certification</a> (300hrs)</li>
+          <li>Completed Responsive Web Design Certification (300hrs) <a href="https://www.freecodecamp.org/certification/rubanero/responsive-web-design" class="btn btn-sm btn-warning"  role="button" aria-pressed="true">View Certificate</a></li> 
+          <li>Completed Javascript Algorithms and Data Structures Certification (300hrs) <a href="https://www.freecodecamp.org/certification/rubanero/javascript-algorithms-and-data-structures" class="btn btn-sm btn-warning"  role="button" aria-pressed="true">View Certificate</a></li>
+          
         </ul>
       </div>
       <div class="col-4">
