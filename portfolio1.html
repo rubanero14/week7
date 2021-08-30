@@ -220,13 +220,36 @@
         }
         #toggle,#toggle1,#toggle2,#toggle3,#toggle4 {
           width:100%;
-          transition: 0s all ease-in-out;
+          transition: 0.5s all ease-in-out;
           border-radius: 20px;
         }
         #toggle:hover,#toggle1:hover,#toggle2:hover,#toggle3:hover,#toggle4:hover {
           font-weight: bold;
           color: white;
           opacity: 1;
+         }
+         #dropitem1, #dropitem2, #dropitem3, #dropitem4{
+          transition: all 2s all ease-in-out;
+        }
+        #dropitem1:active, #dropitem2:active, #dropitem3:active, #dropitem4:active{
+          transition: all 2s all ease-in-out;
+        }
+        #mainbutton1{
+          width: 29%;
+          height: auto;
+          transition: 0s all ease-in-out;
+          color: ghostwhite;
+          border-radius: 20px;
+          margin-left: 3%;
+         }
+
+         #mainbutton1:hover {
+          font-weight: bold;
+          color: white;
+          opacity: 1;
+         }
+          #mainbutton2{
+          display: inline;
          }
         </style>
 
@@ -302,13 +325,13 @@
             <img id="mypic"src="Me.jpeg" class="img-thumbnail" alt="Me" style="width:155px;">
           </div>
         </div>
-        <div class="col-12 p-3">
+        <div class="col-12 p-3 container-fluid">
           
-          <p><a id="mainbutton" href="tel:+60142105569" class="btn btn-danger my-1 glow-button" role="button" aria-pressed="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+          <p id="mainbutton2"><a id="mainbutton1" href="tel:+60142105569" class="btn btn-danger my-1 glow-button" role="button" aria-pressed="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
             <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
             </svg> <span class="button-text">Call</span></a></p>
-          <p><a id="mainbutton" href="https://www.wasap.my/60142105569" class="btn btn-success my-1 glow-button" role="button" aria-pressed="true"><i class="fab fa-whatsapp"></i> <span class="button-text">Whatsapp</span></a></p>
-          <p><a id="mainbutton" href="mailto:rajarubancr@gmail.com" class="btn btn-primary my-1 glow-button" role="button" aria-pressed="true"><i class="fas fa-envelope"></i> <span class="button-text">Email</span></a></p><br><hr><br>
+          <p id="mainbutton2"><a id="mainbutton1" href="https://www.wasap.my/60142105569" class="btn btn-success my-1 glow-button" role="button" aria-pressed="true"><i class="fab fa-whatsapp"></i> <span class="button-text">Whatsapp</span></a></p>
+          <p id="mainbutton2"><a id="mainbutton1" href="mailto:rajarubancr@gmail.com" class="btn btn-primary my-1 glow-button" role="button" aria-pressed="true"><i class="fas fa-envelope"></i> <span class="button-text">Email</span></a></p><br><br><hr>
         <!--<button id="toggle4" style="background-color:#357EC7; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
       </div>
         <div id="dropitem5" style="display: none">-->
@@ -334,7 +357,7 @@
     <div class="row">
       <div class="col-8">
     <p>Those are the projects and tasks that I have learn throughout the Programming course under Professional Certificate in Web Development. Kindly go through each of it in the links below;</p>
-    <button id="toggle" style="background-color:#357EC7; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
+    <button id="toggle" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
     <br><br>
     <ul id="dropitem1" style="display: none">
       <li><a style="text-decoration: none" href="https://rubanero14.github.io/week5/index.html">RockPaperScissor Game</a></li>
@@ -362,7 +385,7 @@
     <div class="row">
       <div class="col-8">
     <p>Those are the Javascript projects and tasks that I have learn throughout the Programming course under Professional Certificate in Web Development. Kindly go through each of it in the links below;</p>
-    <button id="toggle1" style="background-color:#357EC7; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
+    <button id="toggle1" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
     <br><br>
     <ul id="dropitem2" style="display: none">
       <li><a style="text-decoration: none" href="https://codepen.io/el-discreto/pen/abWaXzm">Fizz Buzz</a></li>
@@ -476,7 +499,7 @@
       </div>
     </div>
     <br>
-    <button id="toggle2" style="background-color:#357EC7; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
+    <button id="toggle2" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
     <br>
     <br>
     <div id="dropitem3" style="display:none">
@@ -572,7 +595,7 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/RHB_Logo.svg/1200px-RHB_Logo.svg.png" class="img-fluid img-thumbnail" alt="RHB logo">
     </div>
    </div>
-   <button id="toggle3" style="background-color:#357EC7; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
+   <button id="toggle3" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
     <br><br>
     <div id="dropitem4" style="display:none;">
    <hr>
@@ -663,11 +686,11 @@ function topFunction() {
     if (targetDiv.style.display !== "none"){
       targetDiv.style.display = "none";
       document.getElementById("toggle").innerHTML = "View More Details " + '<i class="fas fa-arrow-down"></i>';
-      vm1.style.background = "#357EC7";
+      vm1.style.background = "mediumseagreen";
     } else {
       targetDiv.style.display = "block";
       document.getElementById("toggle").innerHTML = "Hide " + '<i class="fas fa-arrow-up"></i>';
-      vm1.style.background = "mediumseagreen";
+      vm1.style.background = "#357EC7";
     }
     };
     //td1
@@ -677,11 +700,11 @@ function topFunction() {
     if (targetDiv1.style.display !== "none"){
       targetDiv1.style.display = "none";
       document.getElementById("toggle1").innerHTML = "View More Details " + '<i class="fas fa-arrow-down"></i>';
-      vm2.style.background = "#357EC7";
+      vm2.style.background = "mediumseagreen";
     } else {
       targetDiv1.style.display = "block";
       document.getElementById("toggle1").innerHTML = "Hide " + '<i class="fas fa-arrow-up"></i>';
-      vm2.style.background = "mediumseagreen";
+      vm2.style.background = "#357EC7";
     }
     };
     //td2
@@ -691,11 +714,11 @@ function topFunction() {
     if (targetDiv2.style.display !== "none"){
       targetDiv2.style.display = "none";
       document.getElementById("toggle2").innerHTML = "View More Details " + '<i class="fas fa-arrow-down"></i>';
-      vm3.style.background = "#357EC7"
+      vm3.style.background = "mediumseagreen";
     } else {
       targetDiv2.style.display = "block";
       document.getElementById("toggle2").innerHTML = "Hide " + '<i class="fas fa-arrow-up"></i>';
-      vm3.style.background = "mediumseagreen"
+      vm3.style.background = "#357EC7";
     }
     };
     //td3
@@ -705,11 +728,11 @@ function topFunction() {
     if (targetDiv3.style.display !== "none"){
       targetDiv3.style.display = "none";
       document.getElementById("toggle3").innerHTML = "View More Details " + '<i class="fas fa-arrow-down"></i>';
-      vm4.style.background = "#357EC7"
+      vm4.style.background = "mediumseagreen";
     } else {
       targetDiv3.style.display = "block";
       document.getElementById("toggle3").innerHTML = "Hide " + '<i class="fas fa-arrow-up"></i>';
-      vm4.style.background = "mediumseagreen"
+      vm4.style.background = "#357EC7";
     }
     };
     //td4
@@ -719,11 +742,12 @@ function topFunction() {
     if (targetDiv4.style.display !== "none"){
       targetDiv4.style.display = "none";
       document.getElementById("toggle4").innerHTML = "View More Details " + '<i class="fas fa-arrow-down"></i>';
-      vm5.style.background = "#357EC7"
+      vm5.style.background = "mediumseagreen";
+
     } else {
       targetDiv4.style.display = "block";
       document.getElementById("toggle4").innerHTML = "Hide " + '<i class="fas fa-arrow-up"></i>';
-      vm5.style.background = "mediumseagreen"
+      vm5.style.background = "#357EC7";
     }
     };
 
